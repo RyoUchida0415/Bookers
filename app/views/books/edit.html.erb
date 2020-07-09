@@ -3,12 +3,13 @@
 <%= form_for(@book) do |f|%>
 
 <h2>Title</h2>
-<%=f.text.field:title %>
+<%= f.text_field :title %>
 <h2>Body</h2>
-<%=f.text_area:body %>
-<%=f.submit'Update Book' %>
+<%= f.text_area :body %>
+<%= f.submit 'Update Book' %>
 
 <% end %>
 
 <a class=show href=/books>Edit</a>
+|
 <a class=back href=/books>Back</a>
