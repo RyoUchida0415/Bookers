@@ -9,17 +9,23 @@
 	</thead>
 	<tbosy>
 		<tr>
-			<td>a</td>
-			<td>b</td>
+			<td>リーダブルコード</td>
+			<td>より良いコードを書くためのシンプルで実践的なテクニック</td>
 		</tr>
 		<tr>
-			<td>c</td>
-			<td>d</td>
+			<td>トラブル知らずのシステム設計</td>
+			<td>システム設計の要点を図解で説明してくれます</td>
 		</tr>
 		<tr>
-			<td>e</td>
-			<td>f</td>
+			<td>たのしいRuby</td>
+			<td>Rubyの入門におすすめです</td>
 		</tr>
+		<% @books.each do |book| %>
+		<tr>
+			<td><%=book.title %></td>
+			<td><%=book.body %></td>
+		</tr>
+		<% end %>
 </table>
 
 

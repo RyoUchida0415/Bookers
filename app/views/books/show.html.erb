@@ -1,6 +1,9 @@
-<p>Book was successfully created.</p>
+<p id=notice>Book was successfully created.</p>
 
 <strong>Title</strong>
 <p><%= @book.title %></p>
 <strong>Body</strong>
 <P><%= @book.body %></P>
+
+<a class=edit href=/books/edit>Edit</a>
+<a class=back href=/books>Back</a>
